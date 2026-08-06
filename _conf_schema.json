@@ -2,7 +2,7 @@
   "trwiki": {
     "description": "泰拉瑞亚 Wiki 设置",
     "type": "object",
-    "properties": {
+    "items": {
       "enabled": { "type": "bool", "default": true, "description": "启用泰拉瑞亚 Wiki" },
       "api_url": { "type": "string", "default": "https://terraria.wiki.gg/api.php", "description": "MediaWiki API 地址" },
       "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
@@ -16,7 +16,7 @@
   "sdwiki": {
     "description": "星露谷物语 Wiki 设置",
     "type": "object",
-    "properties": {
+    "items": {
       "enabled": { "type": "bool", "default": true, "description": "启用星露谷 Wiki" },
       "api_url": { "type": "string", "default": "https://zh.stardewvalleywiki.com/mediawiki/api.php", "description": "MediaWiki API 地址" },
       "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
@@ -30,7 +30,7 @@
   "mcwiki": {
     "description": "我的世界 Wiki 设置",
     "type": "object",
-    "properties": {
+    "items": {
       "enabled": { "type": "bool", "default": true, "description": "启用 MC Wiki" },
       "api_url": { "type": "string", "default": "https://zh.minecraft.wiki/api.php", "description": "MediaWiki API 地址" },
       "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
@@ -44,7 +44,7 @@
   "isaacwiki": {
     "description": "以撒的结合 Wiki 设置",
     "type": "object",
-    "properties": {
+    "items": {
       "enabled": { "type": "bool", "default": true, "description": "启用以撒 Wiki" },
       "api_url": { "type": "string", "default": "https://bindingofisaacrebirth.wiki.gg/api.php", "description": "MediaWiki API 地址" },
       "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
@@ -58,7 +58,7 @@
   "sts2wiki": {
     "description": "杀戮尖塔 2 Wiki 设置",
     "type": "object",
-    "properties": {
+    "items": {
       "enabled": { "type": "bool", "default": true, "description": "启用杀戮尖塔 2 Wiki" },
       "api_url": { "type": "string", "default": "https://spire-codex.com/api", "description": "Spire Codex API 地址" },
       "site_url": { "type": "string", "default": "https://spire-codex.com", "description": "页面站点地址" },
