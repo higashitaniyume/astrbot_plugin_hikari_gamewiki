@@ -73,6 +73,7 @@ class GameWikiPlugin(Star):
 
     def __init__(self, context: Context, config: Any = None):
         super().__init__(context, config)
+        self.config = config
 
     # ── 工具方法 ──
 
