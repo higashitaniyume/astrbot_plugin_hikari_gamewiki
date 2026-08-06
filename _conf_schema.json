@@ -68,7 +68,12 @@
       "search_limit": { "type": "int", "default": 5, "description": "搜索结果数量" },
       "summary_max_chars": { "type": "int", "default": 300, "description": "摘要最大字符数" },
       "detail_max_chars": { "type": "int", "default": 900, "description": "详情最大字符数" },
-      "search_categories": { "type": "list", "default": [], "description": "搜索分类（留空使用默认：卡牌/角色/遗物/药水等）" },
+      "search_categories": {
+        "type": "list",
+        "default": [],
+        "items": { "type": "string", "description": "搜索分类名" },
+        "description": "搜索分类（留空使用默认：卡牌/角色/遗物/药水等）"
+      },
       "proxy": { "type": "string", "default": "", "description": "代理地址（可选）" }
     }
   }
