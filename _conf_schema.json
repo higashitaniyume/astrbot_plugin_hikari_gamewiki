@@ -1,0 +1,75 @@
+{
+  "trwiki": {
+    "description": "泰拉瑞亚 Wiki 设置",
+    "type": "object",
+    "properties": {
+      "enabled": { "type": "bool", "default": true, "description": "启用泰拉瑞亚 Wiki" },
+      "api_url": { "type": "string", "default": "https://terraria.wiki.gg/api.php", "description": "MediaWiki API 地址" },
+      "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
+      "search_limit": { "type": "int", "default": 3, "description": "搜索结果数量" },
+      "summary_max_chars": { "type": "int", "default": 220, "description": "摘要最大字符数" },
+      "detail_max_chars": { "type": "int", "default": 1600, "description": "详情最大字符数" },
+      "image_size": { "type": "int", "default": 640, "description": "主图宽度（px）" },
+      "proxy": { "type": "string", "default": "", "description": "代理地址（可选）" }
+    }
+  },
+  "sdwiki": {
+    "description": "星露谷物语 Wiki 设置",
+    "type": "object",
+    "properties": {
+      "enabled": { "type": "bool", "default": true, "description": "启用星露谷 Wiki" },
+      "api_url": { "type": "string", "default": "https://zh.stardewvalleywiki.com/mediawiki/api.php", "description": "MediaWiki API 地址" },
+      "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
+      "search_limit": { "type": "int", "default": 3, "description": "搜索结果数量" },
+      "summary_max_chars": { "type": "int", "default": 220, "description": "摘要最大字符数" },
+      "detail_max_chars": { "type": "int", "default": 1600, "description": "详情最大字符数" },
+      "image_size": { "type": "int", "default": 640, "description": "主图宽度（px）" },
+      "proxy": { "type": "string", "default": "", "description": "代理地址（可选）" }
+    }
+  },
+  "mcwiki": {
+    "description": "我的世界 Wiki 设置",
+    "type": "object",
+    "properties": {
+      "enabled": { "type": "bool", "default": true, "description": "启用 MC Wiki" },
+      "api_url": { "type": "string", "default": "https://zh.minecraft.wiki/api.php", "description": "MediaWiki API 地址" },
+      "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
+      "search_limit": { "type": "int", "default": 3, "description": "搜索结果数量" },
+      "summary_max_chars": { "type": "int", "default": 220, "description": "摘要最大字符数" },
+      "detail_max_chars": { "type": "int", "default": 1600, "description": "详情最大字符数" },
+      "image_size": { "type": "int", "default": 640, "description": "主图宽度（px）" },
+      "proxy": { "type": "string", "default": "", "description": "代理地址（可选）" }
+    }
+  },
+  "isaacwiki": {
+    "description": "以撒的结合 Wiki 设置",
+    "type": "object",
+    "properties": {
+      "enabled": { "type": "bool", "default": true, "description": "启用以撒 Wiki" },
+      "api_url": { "type": "string", "default": "https://bindingofisaacrebirth.wiki.gg/api.php", "description": "MediaWiki API 地址" },
+      "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
+      "search_limit": { "type": "int", "default": 3, "description": "搜索结果数量" },
+      "summary_max_chars": { "type": "int", "default": 220, "description": "摘要最大字符数" },
+      "detail_max_chars": { "type": "int", "default": 1600, "description": "详情最大字符数" },
+      "image_size": { "type": "int", "default": 640, "description": "主图宽度（px）" },
+      "proxy": { "type": "string", "default": "", "description": "代理地址（可选）" }
+    }
+  },
+  "sts2wiki": {
+    "description": "杀戮尖塔 2 Wiki 设置",
+    "type": "object",
+    "properties": {
+      "enabled": { "type": "bool", "default": true, "description": "启用杀戮尖塔 2 Wiki" },
+      "api_url": { "type": "string", "default": "https://spire-codex.com/api", "description": "Spire Codex API 地址" },
+      "site_url": { "type": "string", "default": "https://spire-codex.com", "description": "页面站点地址" },
+      "language": { "type": "string", "default": "zhs", "description": "语言代码（zhs=简体中文）" },
+      "version": { "type": "string", "default": "", "description": "游戏版本（留空为默认版本）" },
+      "timeout": { "type": "int", "default": 12, "description": "请求超时（秒）" },
+      "search_limit": { "type": "int", "default": 5, "description": "搜索结果数量" },
+      "summary_max_chars": { "type": "int", "default": 300, "description": "摘要最大字符数" },
+      "detail_max_chars": { "type": "int", "default": 900, "description": "详情最大字符数" },
+      "search_categories": { "type": "list", "default": [], "description": "搜索分类（留空使用默认：卡牌/角色/遗物/药水等）" },
+      "proxy": { "type": "string", "default": "", "description": "代理地址（可选）" }
+    }
+  }
+}
